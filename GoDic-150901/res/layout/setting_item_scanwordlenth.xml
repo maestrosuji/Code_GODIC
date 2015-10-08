@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/settingitem_wordscanlength_bt_decrease"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:text="-"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/settingitem_wordscanlength_tv_displaynumber"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/settingitem_wordscanlength_bt_decrease"
+        android:background="@color/godic_white"
+        android:layout_centerVertical="true"
+        android:text="3"
+        android:textColor="@color/godic_black"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/settingitem_wordscanlength_bt_increase"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/settingitem_wordscanlength_tv_displaynumber"
+        android:padding="0dp"
+        android:text="+"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+</RelativeLayout>

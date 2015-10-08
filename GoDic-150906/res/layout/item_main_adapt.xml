@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_madapt_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Bottom View For Right to Left -->
+
+    <LinearLayout
+        android:id="@+id/item_madapt_llo_bottom"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/item_madapt_bt_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt"
+            android:gravity="center"
+            android:text="더 보기"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/item_madapt_bt_web"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt"
+            android:gravity="center"
+            android:text="웹 검색"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/item_madapt_bt_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt"
+            android:gravity="center"
+            android:text="삭제"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/item_madapt_bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <!-- Top View, Row itemView of RecyclerView -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_item"
+        android:orientation="horizontal" >
+
+        <com.godic.d_ui.d_item.StarCheckBox
+            android:id="@+id/item_madapt_starcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/item_madapt_tv_eng"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingBottom="5dp"
+            android:text="aa"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_madapt_tv_kor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:ellipsize="end"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text="bb"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

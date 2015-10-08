@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/scan_adapt_tv1"
+        android:layout_width="140dp"
+        android:layout_height="30sp"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:text="null"
+        android:textColor="@color/scan_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/scan_adapt_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_gravity="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="null"
+        android:textColor="@color/scan_text"
+        android:textSize="15sp" />
+
+</LinearLayout>

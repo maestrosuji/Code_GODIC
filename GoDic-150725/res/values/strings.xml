@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">GoDic</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_alert_db">title_alert_db</string>
+    <string name="message_alert_db_first">message_alert_db_first</string>
+    <string name="message_alert_db_recovery">message_alert_db_recovery</string>
+    <string name="message_alert_db_update">message_alert_db_update</string>
+    <string name="message_alert_db_check_error">message_alert_db_check_error</string>
+    <string name="message_progress_download">message_progress_download</string>
+    <string name="message_alert_db_download_fail">message_alert_db_download_fail</string>
+    <string name="download">download</string>
+    <string name="later">later</string>
+    <string name="retry">retry</string>
+    <string name="exit">exit</string>
+
+</resources>

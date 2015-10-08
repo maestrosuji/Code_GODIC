@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scan_rlo_whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/scan_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/actionbar"
+                android:minHeight="?attr/actionBarSize" />
+
+            <android.support.v4.widget.DrawerLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/scan_dl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/scan_toolbar" >
+
+                <RelativeLayout
+                    android:id="@+id/scan_rlo_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RelativeLayout
+                        android:id="@+id/scan_rlo_vsb"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/scan_flo_control"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/vsb" >
+
+                        <com.godic.d_ui.b_scan.VerticalSeekbar
+                            android:id="@+id/scan_vsb"
+                            style="@color/actionbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/scan_rlo_space"
+                            android:progress="50" />
+
+                        <RelativeLayout
+                            android:id="@+id/scan_rlo_space"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_alignParentBottom="true" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/scan_margin_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@id/scan_rlo_vsb"
+                        android:background="@color/scan_loupe_layout" />
+
+                    <RelativeLayout
+                        android:id="@+id/scan_rlo_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_below="@id/scan_margin_top"
+                        android:layout_toLeftOf="@id/scan_rlo_vsb" >
+
+                        <ImageView
+                            android:id="@+id/scan_margin_left"
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/scan_loupe_layout" />
+
+                        <ImageView
+                            android:id="@+id/scan_margin_right"
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/scan_loupe_layout" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/scan_margin_right"
+                            android:layout_toRightOf="@id/scan_margin_left" >
+
+                            <ImageView
+                                android:id="@+id/scan_loupe"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <ProgressBar
+                                android:id="@+id/scan_pb_loading"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/scan_margin_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@id/scan_rlo_center"
+                        android:layout_toLeftOf="@id/scan_rlo_vsb"
+                        android:background="@color/scan_loupe_layout" />
+
+                    <ListView
+                        android:id="@+id/scan_lv_words"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/scan_flo_control"
+                        android:layout_below="@id/scan_margin_bottom"
+                        android:layout_toLeftOf="@id/scan_rlo_vsb"
+                        android:background="@color/scan_listview"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp" >
+                    </ListView>
+
+                    <FrameLayout
+                        android:id="@+id/scan_flo_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/vsb" >
+
+                        <RelativeLayout
+                            android:id="@+id/scan_rlo_control"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Button
+                                android:id="@+id/scan_bt_flash"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignBaseline="@+id/scan_bt_shot"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/flash_off" />
+
+                            <Button
+                                android:id="@+id/scan_bt_shot"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/selector_shot"
+                                android:padding="0dp" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/scan_llo_control_check"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:visibility="invisible" >
+
+                            <Button
+                                android:id="@+id/scan_bt_cancel"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bt"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:text="Cancel" />
+
+                            <Button
+                                android:id="@+id/scan_bt_save"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_bt"
+                                android:text="Save" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <android.support.design.widget.NavigationView
+                    android:id="@+id/drawer_nv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    app:headerLayout="@layout/drawer_header"
+                    app:menu="@menu/scan_drawer" />
+            </android.support.v4.widget.DrawerLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_rlo_captureEffect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:visibility="invisible" >
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

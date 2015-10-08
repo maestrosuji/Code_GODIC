@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/scan_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/actionbar" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_dl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/scan_toolbar" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/list_madapt_iv"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/godic_white" 
+                    android:src="@drawable/ic_launcher"/>
+
+                <TextView
+                    android:id="@+id/list_madapt_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/list_madapt_iv"
+                    android:gravity="center_horizontal"
+                    android:text="Title"
+                    android:textColor="@color/list_date"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/list_madapt_tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list_madapt_tv_title"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/list_madapt_iv"
+                    android:gravity="right"
+                    android:text="YYYY.MM.DD"
+                    android:textColor="@color/list_date"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/list_madapt_tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list_madapt_tv_date"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/list_madapt_iv"
+                    android:singleLine="true"
+                    android:text="content"
+                    android:textColor="@color/list_date"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/help_rlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" 
+        android:alpha="0.7">
+    </RelativeLayout>
+
+</RelativeLayout>

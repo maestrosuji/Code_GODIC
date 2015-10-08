@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/ic_launcher"
+        android:title="화면 이동">
+        <menu>
+            <item
+                android:id="@+id/nv_item_scan"
+                android:icon="@drawable/ic_launcher"
+                android:title="스캔"/>
+            <item
+                android:id="@+id/nv_item_history"
+                android:icon="@drawable/ic_launcher"
+                android:title="히스토리"/>
+            <item
+                android:id="@+id/nv_item_bookmark"
+                android:icon="@drawable/ic_launcher"
+                android:title="북마크"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nv_item_guide"
+        android:icon="@drawable/ic_launcher"
+        android:title="Guide"/>
+    <item
+        android:id="@+id/nv_item_about"
+        android:icon="@drawable/ic_launcher"
+        android:title="About"/>
+    <item
+        android:id="@+id/nv_item_setting"
+        android:icon="@drawable/ic_launcher"
+        android:title="Setting"/>
+    <item
+        android:id="@+id/nv_item_contact"
+        android:icon="@drawable/ic_launcher"
+        android:title="Contact Us"/>
+
+</menu>

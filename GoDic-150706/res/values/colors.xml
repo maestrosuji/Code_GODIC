@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="scan_loupe_layout">#aa1E6081</color>
+    <color name="actionbar">#1D9BB5</color>
+    <color name="vsb">#aa1E6081</color>
+    <color name="control_button_before">#55ffffff</color>
+    <color name="control_button_after">#88ffffff</color>
+    <color name="scan_listview">#ddffffff</color>
+    <color name="scan_text">#555555</color>
+    <color name="list_cardview">#F8FDFF</color>
+    <color name="list_layout">#F3EDE2</color>
+    <color name="list_title">#000000</color>
+    <color name="list_date">#B9BBBD</color>
+    <color name="list_content">#000000</color>
+    <color name="godic_white">#ffffff</color>
+    <color name="godic_black">#000000</color>
+    <color name="godic_primary">#1D9BB5</color>
+    <color name="godic_prymary_dark">#1E6081</color>
+</resources>

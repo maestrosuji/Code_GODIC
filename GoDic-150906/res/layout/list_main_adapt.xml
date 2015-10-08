@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_madapt_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Bottom View For Right to Left -->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_madapt_cv_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="3dp" >
+
+        <LinearLayout
+            android:id="@+id/list_madapt_llo_bottom"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/list_madapt_bt_open"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bt"
+                android:gravity="center"
+                android:text="Open"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/list_madapt_bt_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bt"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/list_madapt_bt_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bt"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/list_madapt_bt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bt"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Top View, Row itemView of RecyclerView -->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_madapt_cv_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/list_cardview"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="3dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_cv"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@+id/list_madapt_iv"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/godic_white" />
+
+            <TextView
+                android:id="@+id/list_madapt_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_toLeftOf="@+id/list_madapt_bt_more"
+                android:layout_toRightOf="@id/list_madapt_iv"
+                android:gravity="center_horizontal"
+                android:text="aaaaa"
+                android:textColor="@color/list_title"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/list_madapt_llo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_madapt_tv_title"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/list_madapt_bt_more"
+                android:layout_toRightOf="@id/list_madapt_iv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/list_madapt_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:text="bbbb"
+                    android:textColor="@color/list_date"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/list_madapt_tv_cnt"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="cnt"
+                    android:textColor="@color/list_date"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/list_madapt_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_madapt_llo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toLeftOf="@id/list_madapt_bt_more"
+                android:layout_toRightOf="@id/list_madapt_iv"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="cccc"
+                android:textColor="@color/list_content"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/list_madapt_bt_more"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_more" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</com.daimajia.swipe.SwipeLayout>

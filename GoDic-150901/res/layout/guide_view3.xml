@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7" >
+
+    <Button
+        android:id="@+id/bt_notShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="더 이상 보지 않겠습니다." />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/bt_notShow"
+        android:text="닫기" />
+    
+    <RelativeLayout
+        android:id="@+id/help_rlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" 
+        android:alpha="0.7">
+    </RelativeLayout>
+
+</RelativeLayout>
